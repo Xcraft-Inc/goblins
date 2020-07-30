@@ -1,6 +1,6 @@
 {
   "name": "goblins",
-  "version": "0.0.2",
+  "version": "0.0.2-rc1",
   "description": "Bootsrap a new xcraft/goblin application",
   "main": "lib/index.js",
   "bin": {

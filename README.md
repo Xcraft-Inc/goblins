@@ -1,0 +1,4 @@
+# usage
+
+`npx goblins <appId>`
+

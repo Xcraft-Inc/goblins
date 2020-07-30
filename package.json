@@ -1,0 +1,14 @@
+{
+  "name": "goblins",
+  "version": "0.0.1",
+  "description": "Bootsrap a new xcraft/goblin application",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samuel Loup",
+  "license": "MIT",
+  "dependencies": {
+    "xcraft-core-fs": "^2.1.0"
+  }
+}

@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Bootsrap a new xcraft/goblin application",
   "main": "lib/index.js",
+  "bin": {
+    "goblins": "lib/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

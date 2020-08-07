@@ -1,6 +1,6 @@
 {
   "name": "goblins",
-  "version": "0.0.2-rc1",
+  "version": "0.0.2-rc2",
   "description": "Bootsrap a new xcraft/goblin application",
   "main": "lib/index.js",
   "bin": {
@@ -12,6 +12,7 @@
   "author": "Samuel Loup",
   "license": "MIT",
   "dependencies": {
+    "cli-color": "^2.0.0",
     "xcraft-core-fs": "^2.1.0"
   }
 }

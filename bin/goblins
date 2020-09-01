@@ -16,4 +16,4 @@ if (major < 10) {
   process.exit(1);
 }
 
-require('./popGoblin.js');
+require('../lib/popGoblin.js');

@@ -2,9 +2,8 @@
   "name": "goblins",
   "version": "0.1.0",
   "description": "Bootsrap a new xcraft/goblin application",
-  "main": "lib/index.js",
   "bin": {
-    "goblins": "lib/index.js"
+    "goblins": "bin/goblins"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,11 +12,11 @@
   "license": "MIT",
   "dependencies": {
     "cli-color": "^2.0.0",
-    "xcraft-core-fs": "^2.1.0",
-    "ink": "^3.0.3",
+    "ink": "^3.0.4",
     "ink-big-text": "^1.2.0",
     "ink-gradient": "^2.0.0",
-    "react": "^16.13.1"
+    "react": "^16.13.1",
+    "xcraft-core-fs": "^2.1.0"
   },
   "devDependencies": {
     "prettier": "2.0.4",

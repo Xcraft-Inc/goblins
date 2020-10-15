@@ -16,7 +16,8 @@
     "ink-big-text": "^1.2.0",
     "ink-gradient": "^2.0.0",
     "react": "^16.13.1",
-    "xcraft-core-fs": "^2.1.0"
+    "xcraft-core-fs": "^2.1.0",
+    "yargs": "^16.0.3"
   },
   "devDependencies": {
     "prettier": "2.0.4",

@@ -1,6 +1,6 @@
 {
   "name": "goblins",
-  "version": "0.8.8",
+  "version": "0.8.9",
   "description": "Bootsrap a new xcraft/goblin application",
   "bin": {
     "goblins": "bin/goblins"

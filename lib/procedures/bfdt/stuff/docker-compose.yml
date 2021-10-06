@@ -1,0 +1,46 @@
+version: '3.9'
+
+services:
+  elasticsearch:
+    container_name: elasticsearch
+    volumes:
+      - data:/usr/share/elasticsearch/data
+    image: docker.elastic.co/elasticsearch/elasticsearch:5.6.16
+    restart: always
+    environment:
+      - bootstrap.memory_lock=true
+      - 'ES_JAVA_OPTS=-Xms512m -Xmx512m'
+      - 'discovery.type=single-node'
+      - MAX_OPEN_FILES=65535
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    cap_add:
+      - IPC_LOCK
+    ports:
+      - '9200:9200'
+      - '9300:9300'
+    command: >
+      /bin/sh -c "./bin/elasticsearch-plugin list | grep -q analysis-phonetic 
+      || ./bin/elasticsearch-plugin install analysis-phonetic;
+      ./bin/elasticsearch-plugin remove x-pack;
+      ./bin/elasticsearch"
+
+  rethinkdb:
+    container_name: rethinkdb
+    volumes:
+      - data:/data
+    image: rethinkdb:2.4-buster-slim
+    restart: always
+    ports:
+      - '28015:28015'
+      - '8080:8080'
+
+volumes:
+  data:
+    name: workshop
+    driver: local

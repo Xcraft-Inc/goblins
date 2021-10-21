@@ -42,5 +42,3 @@ services:
 
 volumes:
   data:
-    name: xcraft-data
-    driver: local

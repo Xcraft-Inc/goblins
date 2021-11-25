@@ -12,9 +12,12 @@
   "license": "MIT",
   "dependencies": {
     "cli-color": "^2.0.0",
+    "cli-spinners": "^2.6.1",
+    "ora": "^5.4.1",
     "react": "^16.13.1",
     "xcraft-core-fs": "^2.1.0",
-    "yargs": "^16.0.3"
+    "yargs": "^16.0.3",
+    "gigawatts": "^4.0.5"
   },
   "devDependencies": {
     "prettier": "2.0.4",
